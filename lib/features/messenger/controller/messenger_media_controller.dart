@@ -7,7 +7,6 @@ import 'package:social/core/app/utils/mixin/handle_failure_mixin.dart';
 import 'package:taakitecture/taakitecture.dart';
 import '../../../core/app/config/app_setting.dart';
 import 'image_picker_mixin.dart';
-import 'messenger_controller.dart';
 import 'messenger_media_mixin.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 
@@ -57,7 +56,7 @@ class MessengerMediaController extends BaseController with ImagePickerMixin, Mes
   @override
   onSuccess(result) {
     if (result.valid) {
-      MessengerController.to.sendMessage(media: result.name);
+      // MessengerController.to.sendMessage(media: result.name);
     }
   }
 }

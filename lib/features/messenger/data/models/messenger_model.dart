@@ -1,11 +1,9 @@
 import 'package:social/features/messenger/data/models/user_info_model.dart';
-import 'package:social/features/ticket/data/models/ticket_item_model.dart';
 import 'package:taakitecture/taakitecture.dart';
 import 'message_model.dart';
 
 class MessagerModel extends BaseModel with ModelMixin {
   late List<MessagesModel> messages;
-  late TicketStatus ticketStatus;
   late String name;
   late UserInfoModel userInfo;
   late List<String> rejectList;
@@ -24,9 +22,6 @@ class MessagerModel extends BaseModel with ModelMixin {
         break;
       case 'name':
         name = value;
-        break;
-      case 'state':
-        ticketStatus = TicketStatus.values[value];
         break;
       case 'userInfo':
         userInfo = UserInfoModel().fromJson(value);
