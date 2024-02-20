@@ -30,7 +30,7 @@ class ImpoApp extends StatelessWidget {
       textDirection: AppSetting.culture.textDirection,
       translations: Messages(),
       getPages: Routs.routs,
-      initialRoute: AppRoutes.splash,
+      initialRoute: AppRoutes.root,
       routingCallback: HandleFailureMixin.onRouteChange,
       builder: (context, child) => MediaQuery(
         data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
