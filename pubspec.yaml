@@ -59,10 +59,7 @@ dependencies:
 
 
   # chat_composer dependencies
-  bloc: ^8.0.3
-  flutter_bloc: ^8.0.1
-  fluttertoast: ^8.0.9
-  flutter_sound_lite: ^8.5.0
+
   # end chat composer dependencies
 
 
