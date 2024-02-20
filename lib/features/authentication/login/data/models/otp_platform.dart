@@ -1,0 +1,1 @@
+enum OtpPlatform { phoneNumber, email }
