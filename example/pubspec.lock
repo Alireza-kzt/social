@@ -984,10 +984,10 @@ packages:
     dependency: transitive
     description:
       name: shamsi_date
-      sha256: "19020ef0a001db3eabcec8657f8aa10b93b3746641d9eca64db9a41e6506645c"
+      sha256: ea28a14bcfca3029d8df2aaa7d0267ff9b23a77579705b200a67834cdabd0d55
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.2"
+    version: "0.14.1"
   shared_preferences:
     dependency: transitive
     description:

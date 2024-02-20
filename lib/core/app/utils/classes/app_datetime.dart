@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:intl/intl.dart';
+import 'package:shamsi_date/extensions.dart';
 import 'package:shamsi_date/shamsi_date.dart';
 import '../../config/app_setting.dart';
 
@@ -188,10 +189,10 @@ class JalaliDateTime extends AppDateTime {
   AppDateTime toZeroHour() => AppDateTime.fromDateTime(dateTime
       .toJalali()
       .copy(
-        hour: 0,
-        minute: 0,
-        second: 0,
-        millisecond: 0,
+        // hour: 0,
+        // minute: 0,
+        // second: 0,
+        // millisecond: 0,
       )
       .toDateTime());
 
