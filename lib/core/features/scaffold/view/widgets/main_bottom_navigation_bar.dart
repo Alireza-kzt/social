@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:social/core/app/utils/extensions/context/style_shortcut.dart';
-import 'package:vibration/vibration.dart';
 import '../../data/models/tab_model.dart';
 
 class MainBottomNavigationBar extends StatelessWidget {
@@ -37,11 +36,9 @@ class MainBottomNavigationBar extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 4, top: 8),
               child: GestureDetector(
                 onTap: () {
-                  Vibration.vibrate(duration: 20);
                   onIndexChanged(index);
                 },
                 onLongPress: () {
-                  Vibration.vibrate(duration: 30);
                   tabs[index].longPressAction?.call();
                 },
                 child: Column(
