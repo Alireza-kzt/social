@@ -1,7 +1,7 @@
 class AssetPaths {
-  static const String imagesDir = 'assets/images';
-  static const String lottieDir = 'assets/lotties';
-  static const String soundDir = 'assets/sound';
+  static const String imagesDir = 'packages/social/assets/images';
+  static const String lottieDir = 'packages/social/assets/lotties';
+  static const String soundDir = 'packages/social/assets/sound';
 
   static const String arrowRight = "$imagesDir/arrow_right.svg";
   static const String export = "$imagesDir/export.svg";
