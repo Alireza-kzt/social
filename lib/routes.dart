@@ -6,8 +6,7 @@ import 'package:social/features/share_experience/topic/view/pages/share_experien
 import 'core/app/constants/app_routes.dart';
 import 'core/features/scaffold/app_scaffold_bindings.dart';
 import 'core/features/scaffold/view/pages/app_scaffold_page.dart';
-import 'core/features/splash/splash_bindings.dart';
-import 'core/features/splash/view/pages/splash_page.dart';
+
 
 import 'features/profile/profile_bindings.dart';
 import 'features/profile/view/pages/activity_page.dart';
@@ -21,11 +20,6 @@ import 'features/share_experience/social/topic_bindings.dart';
 
 class Routs {
   static List<GetPage> routs = <GetPage>[
-    GetPage(
-      name: AppRoutes.splash,
-      page: () => const SplashPage(),
-      binding: SplashBindings(),
-    ),
     GetPage(
       name: AppRoutes.root,
       page: () => const AppScaffoldPage(),

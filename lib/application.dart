@@ -12,20 +12,20 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 import 'initial_bindings.dart';
 import 'routes.dart';
 
-class ImpoApp extends StatelessWidget {
-  const ImpoApp({Key? key}) : super(key: key);
+class ShareExperienceApp extends StatelessWidget {
+  final String token;
+
+  const ShareExperienceApp({Key? key, required this.token}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Impo",
-      onInit: App.onAppStart(context),
+      title: "Share Experience",
+      onInit: App.onAppStart(context, token),
       initialBinding: InitialBindings(),
       theme: ImpoTheme.light,
       themeMode: ThemeMode.light,
-      // darkTheme: ImpoTheme.dark,
-      // themeMode: BoxHelper.themeMode,
       locale: AppSetting.culture.locale,
       textDirection: AppSetting.culture.textDirection,
       translations: Messages(),

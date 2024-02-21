@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:logger/logger.dart';
+import 'package:social/core/app/utils/helper/box_helpers.dart';
 import 'app/config/app_setting.dart';
 
 class App {
@@ -18,11 +19,9 @@ class App {
     ),
   );
 
-  static Future init() async {
+  static onAppStart(BuildContext context, String token) async {
     await initBox();
-  }
-
-  static onAppStart(BuildContext context) {
+    BoxHelper.setToken(token);
     SystemChrome.setPreferredOrientations(AppSetting.orientation); // Lock orientate
   }
 
