@@ -19,7 +19,7 @@ class App {
     ),
   );
 
-  static onAppStart(BuildContext context, String token) async {
+  static onAppStart(BuildContext context, String token) {
     initBox().then((value) => BoxHelper.setToken(token));
     SystemChrome.setPreferredOrientations(AppSetting.orientation); // Lock orientate
   }
