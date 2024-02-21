@@ -1,0 +1,11 @@
+POST doctor/social/profile
+
+{
+  "username": "String",
+  "avatarImage": "String"
+}
+
+Response:
+{
+  "valid": true
+}

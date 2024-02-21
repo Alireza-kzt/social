@@ -2,11 +2,11 @@ import 'package:get/get.dart';
 import 'package:social/features/share_experience/profile/controller/share_experience_profile_activities_controller.dart';
 import 'package:social/features/share_experience/profile/view/pages/edit_share_experience_profile_page.dart';
 import 'package:social/features/share_experience/profile/view/pages/share_experience_profile_page.dart';
+import 'package:social/features/share_experience/social/view/pages/share_experience_page.dart';
 import 'package:social/features/share_experience/topic/view/pages/share_experience_topic_page.dart';
 import 'core/app/constants/app_routes.dart';
 import 'core/features/scaffold/app_scaffold_bindings.dart';
 import 'core/features/scaffold/view/pages/app_scaffold_page.dart';
-
 
 import 'features/profile/profile_bindings.dart';
 import 'features/profile/view/pages/activity_page.dart';
@@ -20,29 +20,17 @@ import 'features/share_experience/social/topic_bindings.dart';
 
 class Routs {
   static List<GetPage> routs = <GetPage>[
-    GetPage(
-      name: AppRoutes.root,
-      page: () => const AppScaffoldPage(),
-      bindings: [
-
-        ProfileBindings(),
-
-        ShareExperienceBindings(),
-        UploadShareExperienceBindings(),
-      ]..add(AppScaffoldBindings()), // Must be last bindings
-    ),
 
     GetPage(
-      name: AppRoutes.activity,
-      page: () => const ActivityPage(),
-      binding: SettingBindings(),
+      name: AppRoutes.shareExperience,
+      page: () => const ShareExperiencePage(),
+      binding:   ShareExperienceBindings(),
     ),
     GetPage(
       name: AppRoutes.editProfile,
       page: () => const EditProfilePage(),
       bindings: [EditProfileBindings(), UploadProfileBindings()],
     ),
-
     GetPage(
       name: AppRoutes.topic,
       page: () => const ShareExperienceTopicPage(),

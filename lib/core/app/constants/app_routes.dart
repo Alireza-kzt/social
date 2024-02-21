@@ -30,7 +30,8 @@ class AppRoutes {
 
   static var comment = '/comment';
 
-  static String shareExperienceProfile = '/shareExperience/Profile';
-  static String profileActivity = '/shareExperience/profile/Activity';
+  static var shareExperienceProfile = '/shareExperience/Profile';
+  static var profileActivity = '/shareExperience/profile/Activity';
   static var editShareExperienceProfile = '/shareExperience/profile/edit';
+  static var shareExperience = '/shareExperience';
 }
